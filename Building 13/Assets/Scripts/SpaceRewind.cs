@@ -7,7 +7,6 @@ public class SpaceRewind : MonoBehaviour
     [Header("Space Rewind Collider Offset")]
     [SerializeField]
     private float offset = 0.2f;
-    
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the GameObject colliding with the space rewind collider is a player
@@ -24,7 +23,6 @@ public class SpaceRewind : MonoBehaviour
             {
                 playerPosition.x = -playerPosition.x + offset; // Assig new value to x coordinate
             }
-               
             other.gameObject.transform.position = playerPosition; // Assign new x coordinates to the player position
             Debug.Log("Player's new location: " + playerPosition);
         }
