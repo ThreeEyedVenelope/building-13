@@ -23,15 +23,31 @@ public class SpaceRewind : MonoBehaviour
             if (leftCollider)
             {
                 Debug.Log("Player is collidng with the left space rewind collider.");
-                // Move the player to the right edge of the scene
-                //other.gameObject.transform
+
+                // Retrieve player's current location
+                Vector2 playerPosition = other.gameObject.transform.position;
+                Debug.Log("Player's current location: " + playerPosition);
+
+                // Move the player to the right edge of the scene 
+                playerPosition.x = 8.5f; // Assign new value to x coordinate
+                other.gameObject.transform.position = playerPosition; // Assign new x coordinate to the player position
+                Debug.Log("Player's new location: " + playerPosition); 
             }
             // Player is colliding with space rewind collider on the right side 
             else if (rightCollider)
             {
                 Debug.Log("Player is colliding with the right space rewind collider.");
+
+                // Retrieve player's current location
+                Vector2 playerPosition = other.gameObject.transform.position;
+                Debug.Log("Player's current location: " + playerPosition);
+
                 // Move the player to the left edge of the scene
+                playerPosition.x = -8.5f; // Assign new value to x coordinate 
+                other.gameObject.transform.position = playerPosition; // Assign new x coordinate to the player position
+                Debug.Log("Player's new location: " + playerPosition);
             }
+            
         }
     }
 }
