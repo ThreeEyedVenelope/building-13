@@ -618,6 +618,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0.2
+--- !u!1 &2096503405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1140224023764575464, guid: fda44086618cfe149a482d8d138ead8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6810318780916071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2096503406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096503405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4ee812adc208249b4a7ee9bd8f6b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2721411324662750195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2721411324662750195, guid: fda44086618cfe149a482d8d138ead8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6810318780916071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2721411324662750196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721411324662750195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b5ea2606f921f41b2e3c7d58c58124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baileysText: {fileID: 0}
+  baileysDialogue0: Hey Fred.
 --- !u!1001 &6810318780916071200
 PrefabInstance:
   m_ObjectHideFlags: 0
