@@ -18,6 +18,7 @@ public class TextTrigger : MonoBehaviour
         // Check if the GameObject colliding with the space rewind collider is a player
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Player entered a pop up text trigger zone");
             popUpText.SetActive(true);
         }
     }
@@ -26,6 +27,7 @@ public class TextTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Player exited a pop up text trigger zone");
             popUpText.SetActive(false);
         }
     }
