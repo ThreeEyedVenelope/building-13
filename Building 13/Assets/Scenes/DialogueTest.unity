@@ -419,7 +419,7 @@ PrefabInstance:
     - target: {fileID: 2229194656069288188, guid: 94b2183e5244adf49ae8e45a2e25be69,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Kitty
       objectReference: {fileID: 0}
     - target: {fileID: 2229194656069288191, guid: 94b2183e5244adf49ae8e45a2e25be69,
         type: 3}
@@ -547,6 +547,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1924333878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924333876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569e79fbb0b5deb4aab2e74b30d24a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInteractableArea: {fileID: 1924333879}
+--- !u!61 &1924333879
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924333876}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0076492503}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.56188893, y: 0.47963172}
+  m_EdgeRadius: 0
 --- !u!1 &1998836859
 GameObject:
   m_ObjectHideFlags: 0
