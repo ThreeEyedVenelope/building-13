@@ -9,32 +9,43 @@ public class BaileyDialogue : MonoBehaviour
     [SerializeField]
     private GameObject dialogueCanvas = null;
 
-    [Header("Portrait Panel")]
-    [SerializeField]
-    private Image portraitImage = null;
+    [Header("Bailey Dialogue UI Objects")]
 
-    [Header("Bailey's headshot")]
     [SerializeField]
-    private Sprite baileyHeadshot = null;
+    private GameObject baileyDialoguePanel = null;
 
-    [Header("Portrait Title")]
+    [SerializeField]
+    private GameObject baileyPortraitPanel = null;
+
     [SerializeField]
     private Text portraitTitle = null;
 
-    [Header("Dialogue Text")]
     [SerializeField]
     private Text dialogueText = null;
 
+    [SerializeField]
+    private Image portraitImage = null;
+
+    [SerializeField]
+    private Sprite baileyHeadshot = null;
+
+    [Header("Kitty Dialogue UI Objects")]
+  
+    [SerializeField]
+    private GameObject KittyDialoguePanel = null;
+
+    [SerializeField]
+    private GameObject KittyPortraitPanel = null;
+
+    [SerializeField]
+    private Text KittyDialogueText = null;
+
     private string charactereName = "Bailey";
-
     private bool playerColliding = false;
+    private bool dialogueComplete = false;
+    private bool kittysTurn = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private string baileyDialogueString = "";
     // Update is called once per frame
     void Update()
     {
@@ -42,16 +53,13 @@ public class BaileyDialogue : MonoBehaviour
         {
             if (playerColliding)
             {
-                portraitImage.sprite = baileyHeadshot;
-                portraitTitle.text = charactereName;
-                dialogueText.text = "HELLO! Ahem, I mean, hello, and welcome to Building 13! So Fred, how may I assist you today?";
-                dialogueCanvas.SetActive(true);
+                Dialogue();
             }
         }
 
         if (Input.GetButtonDown("Submit"))
         {
-            dialogueCanvas.SetActive(false);
+            NextDialogue();
         }
     }
 
@@ -70,6 +78,48 @@ public class BaileyDialogue : MonoBehaviour
         {
             Debug.Log("The player is no longer colliding with Bailey.");
             playerColliding = false;
+        }
+    }
+
+    void Dialogue()
+    {
+        KittyDialoguePanel.SetActive(false);
+        KittyPortraitPanel.SetActive(false);
+        portraitImage.sprite = baileyHeadshot;
+        portraitTitle.text = charactereName.ToUpper();
+        dialogueText.text = "HELLO! Ahem, I mean, hello, and welcome to Building 13! So Fred, how may I assist you today?";
+        dialogueComplete = false;
+        kittysTurn = true;
+        dialogueCanvas.SetActive(true);
+    }
+
+    void NextDialogue()
+    {
+        if (!dialogueComplete)
+        {
+            baileyDialogueString = "I am Lisa. The building manager of Building 13. And you are Fred.";
+            if (kittysTurn)
+            {
+                baileyDialoguePanel.SetActive(false);
+                baileyPortraitPanel.SetActive(false);
+                KittyDialoguePanel.SetActive(true);
+                KittyPortraitPanel.SetActive(true);
+                KittyDialogueText.text = "I'm not... Fred. May name is Kitty. Who are you?";
+                kittysTurn = false;
+            }
+            else if (!kittysTurn)
+            {
+                baileyDialoguePanel.SetActive(true);
+                baileyPortraitPanel.SetActive(true);
+                KittyDialoguePanel.SetActive(false);
+                KittyPortraitPanel.SetActive(false);
+                dialogueText.text = baileyDialogueString;
+                dialogueComplete = true;
+            }
+        }
+        else if (dialogueComplete)
+        {
+            dialogueCanvas.SetActive(false);
         }
     }
 }
