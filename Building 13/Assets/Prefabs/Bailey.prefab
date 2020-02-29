@@ -57,7 +57,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 588043063
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &8504584873578335521
@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 8387641970703511820}
   - component: {fileID: 8387641970703511822}
   - component: {fileID: 7107617402398360310}
+  - component: {fileID: 6183248299273488047}
   m_Layer: 0
   m_Name: Bailey
   m_TagString: Untagged
@@ -300,6 +301,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpText: {fileID: 819123491142348049}
+--- !u!114 &6183248299273488047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8387641970703511819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f947e83f119b714c95c688413a26aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  baileyHeadshot: {fileID: 21300000, guid: e03f70931600b534dbc2936d8106a421, type: 3}
 --- !u!1 &8390184477968516671
 GameObject:
   m_ObjectHideFlags: 0
