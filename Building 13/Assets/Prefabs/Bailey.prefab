@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &602240674086269689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -177,7 +177,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Talk to Bailey
+  m_Text: 'BAILEY
+
+'
 --- !u!1 &8387641970703511819
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,8 +191,7 @@ GameObject:
   - component: {fileID: 8387641970703511821}
   - component: {fileID: 8387641970703511820}
   - component: {fileID: 8387641970703511822}
-  - component: {fileID: 7107617402398360310}
-  - component: {fileID: 6183248299273488047}
+  - component: {fileID: 5728270951911682088}
   m_Layer: 0
   m_Name: Bailey
   m_TagString: Untagged
@@ -288,7 +289,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1360002, y: 0.32924366}
   m_EdgeRadius: 0
---- !u!114 &7107617402398360310
+--- !u!114 &5728270951911682088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,20 +302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpText: {fileID: 819123491142348049}
---- !u!114 &6183248299273488047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8387641970703511819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f947e83f119b714c95c688413a26aba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  baileyHeadshot: {fileID: 21300000, guid: e03f70931600b534dbc2936d8106a421, type: 3}
 --- !u!1 &8390184477968516671
 GameObject:
   m_ObjectHideFlags: 0

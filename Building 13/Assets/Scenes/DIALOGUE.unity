@@ -138,6 +138,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4143580500805347820}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &307659348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307659347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f947e83f119b714c95c688413a26aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 307659347}
+  baileyDialoguePanel: {fileID: 4143580502336443635}
+  baileyPortraitPanel: {fileID: 4143580502735635147}
+  dialogueText: {fileID: 16251667}
+  kittyDialoguePanel: {fileID: 1878223135}
+  kittyPortraitPanel: {fileID: 796386676}
 --- !u!1 &309171989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1853462986281365832, guid: ea2905817e478a04c9224a1d29706c16,
@@ -382,6 +400,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0.2
+--- !u!1 &874811050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8187427848601677748, guid: a21ac9048cfe525499370618c0520a3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4143580500805347820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &874811052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4143580500805347820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874811050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbd8887451b9e14f88beff9ea0b2707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &918536832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,18 +556,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b2183e5244adf49ae8e45a2e25be69, type: 3}
---- !u!114 &976617491 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 976617491, guid: a21ac9048cfe525499370618c0520a3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4143580500805347820}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1429355030
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +706,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 796386676, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878223135, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4143580502546536683, guid: a21ac9048cfe525499370618c0520a3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -800,7 +832,7 @@ PrefabInstance:
     - target: {fileID: 4143580502735635140, guid: a21ac9048cfe525499370618c0520a3e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 158.65002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4143580502735635140, guid: a21ac9048cfe525499370618c0520a3e,
         type: 3}
@@ -875,16 +907,22 @@ PrefabInstance:
     - target: {fileID: 4143580502336443635, guid: a21ac9048cfe525499370618c0520a3e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143580502336443635, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_Name
+      value: BaileyDialoguePanel
       objectReference: {fileID: 0}
     - target: {fileID: 4143580502735635147, guid: a21ac9048cfe525499370618c0520a3e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878223135, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
-      propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143580502735635147, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_Name
+      value: BaileyPortraitPanel
       objectReference: {fileID: 0}
     - target: {fileID: 1878223136, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_AnchorMin.y
@@ -896,13 +934,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1878223136, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2416
+      value: 743.65
       objectReference: {fileID: 0}
     - target: {fileID: 1878223136, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -193.9
       objectReference: {fileID: 0}
-    - target: {fileID: 796386676, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
+    - target: {fileID: 976617489, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -916,7 +954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796386677, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1831
+      value: 880.15
       objectReference: {fileID: 0}
     - target: {fileID: 796386677, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -954,6 +992,151 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -273.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 307659348}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResponseSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 874811052}
+    - target: {fileID: 2696690349078098562, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BaileyDialogueOneResponseOne
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 307659348}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResponseSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 874811052}
+    - target: {fileID: 9190884393330645018, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BaileyDialogueOneResponseTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546521584921971282, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546521584921971282, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546521584921971282, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546521584921971282, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793776268033931627, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793776268033931627, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793776268033931627, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793776268033931627, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -145
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyDialoguePanel
+      value: 
+      objectReference: {fileID: 1878223135}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyPortraitPanel
+      value: 
+      objectReference: {fileID: 796386676}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: baileyPortraitPanel
+      value: 
+      objectReference: {fileID: 4143580502735635147}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: baileyDialoguePanel
+      value: 
+      objectReference: {fileID: 4143580502336443635}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyChoicePanel
+      value: 
+      objectReference: {fileID: 874811050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
 --- !u!1 &4143580502336443635 stripped
@@ -1121,62 +1304,51 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 819123491142348049, guid: 27ef769a35a31e24083b5994213bfdc8,
+    - target: {fileID: 8387641970703511822, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Offset.y
+      value: 0.062286377
       objectReference: {fileID: 0}
-    - target: {fileID: 7842204484291858774, guid: 27ef769a35a31e24083b5994213bfdc8,
+    - target: {fileID: 8387641970703511822, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
-      propertyPath: m_Text
-      value: 'BAILEY
-
-'
+      propertyPath: m_Size.y
+      value: 0.38836765
       objectReference: {fileID: 0}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: dialogueCanvas
-      value: 
-      objectReference: {fileID: 307659347}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: portraitImage
-      value: 
-      objectReference: {fileID: 1554883086}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: portraitTitle
-      value: 
-      objectReference: {fileID: 1438573201}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 16251667}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: KittyDialoguePanel
-      value: 
-      objectReference: {fileID: 1878223135}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
-        type: 3}
-      propertyPath: KittyPortraitPanel
-      value: 
-      objectReference: {fileID: 796386676}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
       propertyPath: baileyPortraitPanel
       value: 
       objectReference: {fileID: 4143580502735635147}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
       propertyPath: baileyDialoguePanel
       value: 
       objectReference: {fileID: 4143580502336443635}
-    - target: {fileID: 6183248299273488047, guid: 27ef769a35a31e24083b5994213bfdc8,
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
-      propertyPath: KittyDialogueText
+      propertyPath: portraitTitle
       value: 
-      objectReference: {fileID: 976617491}
+      objectReference: {fileID: 1438573201}
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 16251667}
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: portraitImage
+      value: 
+      objectReference: {fileID: 1554883086}
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: baileyHeadshot
+      value: 
+      objectReference: {fileID: 21300000, guid: e03f70931600b534dbc2936d8106a421,
+        type: 3}
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 307659347}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27ef769a35a31e24083b5994213bfdc8, type: 3}
