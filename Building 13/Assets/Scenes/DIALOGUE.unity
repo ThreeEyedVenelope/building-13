@@ -147,15 +147,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 307659347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f947e83f119b714c95c688413a26aba, type: 3}
+  m_Script: {fileID: 11500000, guid: 1468a62e8c393d1419bde372fa410fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 307659347}
+  portraitImage: {fileID: 1554883086}
+  portraitTitle: {fileID: 1438573201}
   baileyDialoguePanel: {fileID: 4143580502336443635}
   baileyPortraitPanel: {fileID: 4143580502735635147}
   dialogueText: {fileID: 16251667}
   kittyDialoguePanel: {fileID: 1878223135}
   kittyPortraitPanel: {fileID: 796386676}
+  eyeballPortraitSprite: {fileID: 21300000, guid: f8122e2d69b7f50448095d567206fccb,
+    type: 3}
+  eyeballName: Eyeball
 --- !u!1 &309171989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1853462986281365832, guid: ea2905817e478a04c9224a1d29706c16,
@@ -710,6 +715,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyDialoguePanel
+      value: 
+      objectReference: {fileID: 1878223135}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyPortraitPanel
+      value: 
+      objectReference: {fileID: 796386676}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: baileyPortraitPanel
+      value: 
+      objectReference: {fileID: 4143580502735635147}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: baileyDialoguePanel
+      value: 
+      objectReference: {fileID: 4143580502336443635}
+    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
+        type: 3}
+      propertyPath: kittyChoicePanel
+      value: 
+      objectReference: {fileID: 874811050}
     - target: {fileID: 1878223135, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1112,31 +1142,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -145
       objectReference: {fileID: 0}
-    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
-        type: 3}
-      propertyPath: kittyDialoguePanel
-      value: 
-      objectReference: {fileID: 1878223135}
-    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
-        type: 3}
-      propertyPath: kittyPortraitPanel
-      value: 
-      objectReference: {fileID: 796386676}
-    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
-        type: 3}
-      propertyPath: baileyPortraitPanel
-      value: 
-      objectReference: {fileID: 4143580502735635147}
-    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
-        type: 3}
-      propertyPath: baileyDialoguePanel
-      value: 
-      objectReference: {fileID: 4143580502336443635}
-    - target: {fileID: 6644420853472920100, guid: a21ac9048cfe525499370618c0520a3e,
-        type: 3}
-      propertyPath: kittyChoicePanel
-      value: 
-      objectReference: {fileID: 874811050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21ac9048cfe525499370618c0520a3e, type: 3}
 --- !u!1 &4143580502336443635 stripped
@@ -1230,7 +1235,8 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6650929566748977645, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
 --- !u!1001 &8387641971323662656
 PrefabInstance:
