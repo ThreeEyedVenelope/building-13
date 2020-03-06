@@ -21,6 +21,8 @@ public class FirstDialogue : MonoBehaviour
         get { return eyeballString;}
         set { eyeballString = value; }
     }
+    
+    private Animator building13Door;
 
     [Header("Universal Dialgoue Game Objects ")]
     [SerializeField]
@@ -64,6 +66,9 @@ public class FirstDialogue : MonoBehaviour
         PlayerController.PlayerCanMove = false;
         kittyDialoguePanel.SetActive(false);
         kittyPortraitPanel.SetActive(false);
+
+        // Get door animator
+        building13Door = GameObject.Find("Building13_Door").GetComponent<Animator>();
     }
     void Update()
     {
@@ -107,6 +112,8 @@ public class FirstDialogue : MonoBehaviour
                 portraitTitle.text = eyeballName;
                 dialogueText.text = eyeballString;
                 dialogueComplete = true; //The end of the First Dialgoue at the moment!
+                //Animate Door
+                building13Door.SetBool("PowerUp", true);
             }
         }
         else if (dialogueComplete)
