@@ -179,6 +179,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4655ac124cc0bdd4bb68cede38bc8bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &508253565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3894175086065709195, guid: a1d71263036c1c848a8f6a4e2ae68915,
+    type: 3}
+  m_PrefabInstance: {fileID: 918536832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508253566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508253565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b929dfb133d744a8921217ffff23be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopUpText: {fileID: 918536833}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,8 +628,34 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3617455147326499341, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360843808718633006, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013115597714276618, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013115597714276618, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d71263036c1c848a8f6a4e2ae68915, type: 3}
+--- !u!1 &918536833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7360843808718633006, guid: a1d71263036c1c848a8f6a4e2ae68915,
+    type: 3}
+  m_PrefabInstance: {fileID: 918536832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &935102882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1372,12 +1417,12 @@ PrefabInstance:
     - target: {fileID: 8387641970703511821, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: 8387641970703511821, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.57
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 8387641970703511821, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
@@ -1475,5 +1520,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 307659347}
+    - target: {fileID: 819123491142348049, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27ef769a35a31e24083b5994213bfdc8, type: 3}
