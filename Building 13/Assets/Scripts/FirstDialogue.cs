@@ -112,8 +112,6 @@ public class FirstDialogue : MonoBehaviour
                 portraitTitle.text = eyeballName;
                 dialogueText.text = eyeballString;
                 dialogueComplete = true; //The end of the First Dialgoue at the moment!
-                //Animate Door
-                building13Door.SetBool("PowerUp", true);
             }
         }
         else if (dialogueComplete)
@@ -121,6 +119,9 @@ public class FirstDialogue : MonoBehaviour
             dialogueCanvas.SetActive(false);
             PlayerController.PlayerCanMove = true;
             Debug.Log("The dialogue has ended.");
+            //Animate door 
+            building13Door.SetBool("PowerUp", true);
+            //Door open animation
         }
     }
 
