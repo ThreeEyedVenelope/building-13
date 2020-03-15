@@ -247,8 +247,10 @@ public class FirstDialogue : MonoBehaviour
             dialogueCanvas.SetActive(false);
             PlayerController.PlayerCanMove = true;
             Debug.Log("The dialogue has ended.");
-            //Animate door 
+            
+            //Animate door powering up
             building13Door.SetBool("PowerUp", true);
+            
             //Door open animation
         }
     }
