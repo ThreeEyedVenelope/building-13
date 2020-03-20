@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BaileyTextTrigger : MonoBehaviour
 {
     [SerializeField]
-    private GameObject popUpText = null;
+    private GameObject baileysNameTag= null;
 
     [SerializeField]
     private GameObject dialogueCanvas = null;
@@ -72,6 +72,7 @@ public class BaileyTextTrigger : MonoBehaviour
         dialogueCanvas.SetActive(true);
         baileyDialoguePanel.SetActive(true);
         baileyPortraitPanel.SetActive(true);
+        baileysNameTag.SetActive(false); 
         Debug.Log("Finished turning on Bailey's dialogue");
     }
 
@@ -95,14 +96,14 @@ public class BaileyTextTrigger : MonoBehaviour
     void KittyEnteringTrigger()
     {
         Debug.Log("KItty is entering Bailey's trigger zone.");
-        popUpText.SetActive(true);
+        baileysNameTag.SetActive(true);
         pendingDialogue = true;
     }
 
     void KittyExitingTrigger()
     {
         Debug.Log("Kitty is exiting Bailey's trigger zone."); 
-        popUpText.SetActive(false);
+        baileysNameTag.SetActive(false);
         pendingDialogue = false;
     }
 }

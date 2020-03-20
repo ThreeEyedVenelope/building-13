@@ -250,7 +250,7 @@ public class FirstDialogue : MonoBehaviour
             
             //Animate door powering up
             building13Door.SetBool("PowerUp", true);
-            
+            EyeballTextTrigger.DontShowEyeballNameTag = true; // DO NOT show Mr. Eyeball's name tag while the door activation and open animation is happening. Lisa appears from behind the doors once the door animations are complete. If Mr. Eyeball's name tag is still activated when Lisa enters the scene, Mr. Eyeball's name tag will block Lisa. 
             //Door open animation
         }
     }
