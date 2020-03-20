@@ -881,6 +881,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1237429200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 819123491142348049, guid: 27ef769a35a31e24083b5994213bfdc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8387641971323662656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1429355030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,5 +1800,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 307659347}
+    - target: {fileID: 5728270951911682088, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: baileysNameTag
+      value: 
+      objectReference: {fileID: 1237429200}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27ef769a35a31e24083b5994213bfdc8, type: 3}
