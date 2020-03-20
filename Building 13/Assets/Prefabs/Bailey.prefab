@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8504584873578335521}
   - component: {fileID: 4471437093230745967}
   m_Layer: 0
-  m_Name: PopUpTextCanvas
+  m_Name: BaileysPopUpCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

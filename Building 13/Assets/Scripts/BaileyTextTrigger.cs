@@ -72,6 +72,7 @@ public class BaileyTextTrigger : MonoBehaviour
         dialogueCanvas.SetActive(true);
         baileyDialoguePanel.SetActive(true);
         baileyPortraitPanel.SetActive(true);
+        baileysNameTag.SetActive(false); 
         Debug.Log("Finished turning on Bailey's dialogue");
     }
 

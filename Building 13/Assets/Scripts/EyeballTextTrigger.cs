@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class EyeballTextTrigger : MonoBehaviour
 {
+    public static bool DontShowEyeballNameTag
+    {
+        get { return dontShowEyeballNameTag; }
+        set { dontShowEyeballNameTag = value; }
+    }
+
     [Header("Eyeball's name tag UI")]
     [SerializeField]
-    private GameObject popUpText;
+    private GameObject eyeballsNameTag;
 
     [Header("Eyeball's UI game objects")]
     [SerializeField]
@@ -25,6 +31,8 @@ public class EyeballTextTrigger : MonoBehaviour
 
     [SerializeField]
     private Sprite eyeballPortraitSprite = null;
+
+    private static bool dontShowEyeballNameTag = false;
 
     private string eyeballName = "Mr.Eyeball";
     private string eyeballFirstString = "Hello, Kitty. Welcome to Purrgatory. I am Eyeball, an extended organ of the building manager for Building 13. Building 13 is a welcoming place, and it was built in universal year 333 by the Purrgatory Whores. You will be staying here until you feel comfortable enough to venture into the greater part of Purrgatory. Lisa, the building manager, will be here in a moment to take you to your room. I thank you in advance for your patience.";
@@ -70,6 +78,7 @@ public class EyeballTextTrigger : MonoBehaviour
         dialogueCanvas.SetActive(true);
         dialoguePanel.SetActive(true);
         portraitPanel.SetActive(true);
+        eyeballsNameTag.SetActive(false);
         Debug.Log("Finished turning on Eyeball dialogue");
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -90,14 +99,24 @@ public class EyeballTextTrigger : MonoBehaviour
     void KittyEnteringTrigger()
     {
         Debug.Log("Kitty is entering Eyeball's trigger zone.");
-        popUpText.SetActive(true);
-        pendingDialogue = true;
+        if (!dontShowEyeballNameTag)
+        {
+            eyeballsNameTag.SetActive(true);
+            pendingDialogue = true;
+        }
+        else if (dontShowEyeballNameTag)
+        {
+            Debug.Log("Eyeball's name tag is temporarily suspended.");
+        }
     }
 
     void KittyExitingTrigger()
     {
         Debug.Log("Kitty is exiting Eyeball's trigger zone.");
-        popUpText.SetActive(false);
-        pendingDialogue = false;
+        if (!dontShowEyeballNameTag)
+        {
+            eyeballsNameTag.SetActive(false);
+            pendingDialogue = false;
+        } 
     }
 }

@@ -793,8 +793,62 @@ PrefabInstance:
       propertyPath: portraitImage
       value: 
       objectReference: {fileID: 1554883086}
+    - target: {fileID: 285731749, guid: a1d71263036c1c848a8f6a4e2ae68915, type: 3}
+      propertyPath: popUpText
+      value: 
+      objectReference: {fileID: 918536833}
+    - target: {fileID: 285731749, guid: a1d71263036c1c848a8f6a4e2ae68915, type: 3}
+      propertyPath: eyeballsNameTag
+      value: 
+      objectReference: {fileID: 1003478945}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519145276846712960, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 15616397800564863, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6610284859049210880, guid: a1d71263036c1c848a8f6a4e2ae68915,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d71263036c1c848a8f6a4e2ae68915, type: 3}
+--- !u!1 &918536833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6610284859049210880, guid: a1d71263036c1c848a8f6a4e2ae68915,
+    type: 3}
+  m_PrefabInstance: {fileID: 918536832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &935102882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -881,6 +935,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1003478945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 15616397800564863, guid: a1d71263036c1c848a8f6a4e2ae68915,
+    type: 3}
+  m_PrefabInstance: {fileID: 918536832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1237429200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 819123491142348049, guid: 27ef769a35a31e24083b5994213bfdc8,
@@ -1683,6 +1743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bailey
+      objectReference: {fileID: 0}
+    - target: {fileID: 819123491142348049, guid: 27ef769a35a31e24083b5994213bfdc8,
+        type: 3}
+      propertyPath: m_Name
+      value: BaileysPopUpCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 8387641970703511821, guid: 27ef769a35a31e24083b5994213bfdc8,
         type: 3}
