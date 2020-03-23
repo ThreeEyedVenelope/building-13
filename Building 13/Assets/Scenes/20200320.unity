@@ -180,24 +180,6 @@ MonoBehaviour:
   baileyPortraitSprite: {fileID: 21300000, guid: e03f70931600b534dbc2936d8106a421,
     type: 3}
   baileyName: Bailey
---- !u!1 &309171989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1853462986281365832, guid: ea2905817e478a04c9224a1d29706c16,
-    type: 3}
-  m_PrefabInstance: {fileID: 4754015526401148644}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &309171990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309171989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4655ac124cc0bdd4bb68cede38bc8bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &484730667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,11 +1634,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lisa
       objectReference: {fileID: 0}
-    - target: {fileID: 1853462986281365832, guid: ea2905817e478a04c9224a1d29706c16,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6607103728321376098, guid: ea2905817e478a04c9224a1d29706c16,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1712,25 +1689,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1512748468924949877, guid: ea2905817e478a04c9224a1d29706c16,
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 307659347}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 4143580502336443635}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: portraitPanel
+      value: 
+      objectReference: {fileID: 4143580502735635147}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: portraitTitle
+      value: 
+      objectReference: {fileID: 1438573201}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 16251667}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: portraitImage
+      value: 
+      objectReference: {fileID: 1554883086}
+    - target: {fileID: 309171990, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+      propertyPath: lisaHeadshot
+      value: 
+      objectReference: {fileID: 21300000, guid: f0d3b3810e2554047b6529dfd7dba0d7,
         type: 3}
-      propertyPath: m_Text
-      value: 'LISA
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247554926229598483, guid: ea2905817e478a04c9224a1d29706c16,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1415600197626179186, guid: ea2905817e478a04c9224a1d29706c16,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6650929566748977645, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea2905817e478a04c9224a1d29706c16, type: 3}
 --- !u!1001 &8387641971323662656
 PrefabInstance:
