@@ -50,6 +50,7 @@ public class BaileyTextTrigger : MonoBehaviour
                     TurnOnBaileyDialogue();
                     FirstDialogue.ConversationStarter = "Bailey";
                     Debug.Log("First dialgoue conversation starter set as Bailey");
+
                     FirstDialogue.BaileysTurn = false;
                     FirstDialogue.EyeballsTurn = false;
                     FirstDialogue.KittysTurn = true;

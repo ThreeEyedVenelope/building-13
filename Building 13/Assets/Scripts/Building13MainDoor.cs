@@ -6,14 +6,20 @@ public class Building13MainDoor : MonoBehaviour
 {
     private Animator doorAnimator;
 
+    [Header("Lisa related")]
     private GameObject lisa;
+    private LisaDialogue lisaDialogue;
 
+    void Awake()
+    {
+        lisa = GameObject.Find("Lisa");
+        lisaDialogue = lisa.GetComponent<LisaDialogue>();
+    }
     // Start is called before the first frame update
     void Start()
     {
         doorAnimator = GetComponent<Animator>();
-        lisa = GameObject.Find("Lisa");
-
+       
         // Make Lisa invisible so she doesn't show up behind the door accidentally
         lisa.SetActive(false);
 
@@ -43,6 +49,10 @@ public class Building13MainDoor : MonoBehaviour
     {
         doorAnimator.SetBool("Door_IsOpening", false);
         doorAnimator.SetBool("Door_IsOpen", true);
+
+        // Lisa's dialogue should appear after Building 13's front door has opened. 
+        
+        lisaDialogue.ShowLisaDialogue();
     }
 
     public void DoorFinishedClosing()
