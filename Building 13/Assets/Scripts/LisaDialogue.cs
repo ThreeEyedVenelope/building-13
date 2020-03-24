@@ -28,6 +28,7 @@ public class LisaDialogue : MonoBehaviour
     {
         CheckForEdition();
         TurnOnLisaDialogue();
+        // After Lisa's first dialogue is complete, she fades into Building 13
     }
 
     void CheckForEdition()
@@ -54,5 +55,17 @@ public class LisaDialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         portraitPanel.SetActive(true);
         Debug.Log("Finished turning on Lisa's dialogue");
+
+        Invoke("TurnOffLisaDialogue", 4); // Turn off Lisa's dialogue in 5 seconds. 
+    }
+
+    void TurnOffLisaDialogue()
+    {
+        dialogueCanvas.SetActive(false);
+        dialoguePanel.SetActive(false);
+        portraitPanel.SetActive(false);
+
+        SpriteDarkening.StartDarkening = true; // Start darkening Lisa's sprite after turning off Lisa's dialogue.
     }
 }
+
