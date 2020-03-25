@@ -9,3 +9,6 @@ Building 13 is part one of Cats In Purrgatory. It is a narrative focused 2D RPG 
 [Tumblr](https://www.tumblr.com/blog/cats-in-purrgatory)
 [Twitter](https://twitter.com/cattatonicat)
 
+## Game Engine
+
+Building 13 is using [Unity](https://unity.com/)
