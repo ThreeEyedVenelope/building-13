@@ -15,7 +15,6 @@ public class SpriteDarkening : MonoBehaviour
     private static bool startDarkening = false;
 
     private byte rgbValue = 255;
-    private int darkeningCounter = 0; // Will be used for controlling how fast the darkening happens.
 
     void Awake()
     {
@@ -35,7 +34,6 @@ public class SpriteDarkening : MonoBehaviour
     {
         if (rgbValue != 0) 
         {
-            darkeningCounter++;
             rgbValue--;
             Debug.Log(rgbValue);
             spriteColor = new Color32(rgbValue, rgbValue, rgbValue, 255);
