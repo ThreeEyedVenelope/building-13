@@ -24,6 +24,8 @@ public class LisaDialogue : MonoBehaviour
     private string lisaName = "Lisa";
     private string lisaDialogue = "";
 
+    private NPCSimpleMove npcSimpleMove = new NPCSimpleMove();
+
     public void ShowLisaDialogue()
     {
         CheckForEdition();
@@ -66,6 +68,8 @@ public class LisaDialogue : MonoBehaviour
         portraitPanel.SetActive(false);
 
         SpriteDarkening.StartDarkening = true; // Start darkening Lisa's sprite after turning off Lisa's dialogue.
+        // While Lisa's sprite is darkening move her backwards.
+        NPCSimpleMove.EnableMove = true;
     }
 }
 

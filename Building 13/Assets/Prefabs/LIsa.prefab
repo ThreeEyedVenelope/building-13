@@ -111,6 +111,9 @@ GameObject:
   - component: {fileID: 2247554926229598483}
   - component: {fileID: -3882290263454281289}
   - component: {fileID: 309171990}
+  - component: {fileID: 4754015526401148646}
+  - component: {fileID: 4754015526401148647}
+  - component: {fileID: 8658929501824701991}
   m_Layer: 0
   m_Name: Lisa
   m_TagString: Untagged
@@ -172,7 +175,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eaeac61711633c046ae2bcc4cbd43922, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -226,7 +229,55 @@ MonoBehaviour:
   portraitTitle: {fileID: 0}
   dialogueText: {fileID: 0}
   portraitImage: {fileID: 0}
-  lisaHeadshot: {fileID: 0}
+  lisaHeadshot: {fileID: 21300000, guid: f0d3b3810e2554047b6529dfd7dba0d7, type: 3}
+--- !u!114 &4754015526401148646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853462986281365832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fb2e4e3265f10419b715c4a43aec2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4754015526401148647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853462986281365832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2ed8ea80c450842a515af1bdcb68c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  maximumSpeed: 8
+  smoothTime: 1
+--- !u!50 &8658929501824701991
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853462986281365832}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &7344032283417619564
 GameObject:
   m_ObjectHideFlags: 0
