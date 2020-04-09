@@ -12,8 +12,11 @@ public class Building13MainDoor : MonoBehaviour
 
     void Awake()
     {
-        lisa = GameObject.Find("Lisa");
-        lisaDialogue = lisa.GetComponent<LisaDialogue>();
+        if(GameObject.Find("Lisa") != null)
+        {
+            lisa = GameObject.Find("Lisa");
+            lisaDialogue = lisa.GetComponent<LisaDialogue>();
+        }
     }
     // Start is called before the first frame update
     void Start()
